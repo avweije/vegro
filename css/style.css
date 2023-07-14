@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+
+    --color-blue: 0, 86, 149;
+    --color-green: 126, 192, 123;
+    --color-white: 255, 255, 255;
+    --color-orange: 229, 107, 89;
+    --color-orange-hover: 235, 133, 117;
+    --color-grey: 238, 244, 248;
+}
+
+body {
+    font-family: 'Baloo Chettan 2', sans-serif;
+    color: rgb(var(--color-blue));
+    padding: 0;
+    margin: 0 0 5em;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    padding: 0%;
+    margin: 0;
+    color: rgb(var(--color-white));
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+    color: rgb(var(--color-blue));
+    margin: 42px 0;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    color: rgb(var(--color-green));
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: rgb(var(--color-blue));
+    margin: 12px 0;
+}
+
+.color-white {
+    color: rgb(var(--color-white));
+}
+
+.color-blue {
+    color: rgb(var(--color-blue));
+}
+
+.color-green {
+    color: rgb(var(--color-green));
+}
+
+.centered {
+    text-align: center;
+}
+
+button {
+    color: rgb(var(--color-white));
+    background-color: rgb(var(--color-orange));
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(var(--color-orange-hover));
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(var(--color-blue));
+    color: rgb(var(--color-white));
+    width: 100%;
+    padding: 1em;
+}
+
+.header-image {
+    content: url("../img/header-page.jpg");
+    width: 100%;
+    height: auto;
+}
+
+
+/* event details */
+
+
+.event-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 42px 0;
+}
+
+.event-details > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-details > span > i {
+    font-size: 24px;
+}
+
+.event-details > span > p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 0px;
+}
+
+/* events container */
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: fit-content;
+    max-width: 80%;
+}
+
+.events-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px rgba(var(--color-blue), .2);
+    border-radius: 4px;
+    background-color: rgb(var(--color-grey));
+    margin: .2em 0 0;
+    padding: .5em;
+    min-height: 80px;
+}
+
+.events-item.event-header {
+    color: rgb(var(--color-white));
+    background-color: rgb(var(--color-green));
+    padding: .1em .5em;
+    min-height: unset;
+}
+
+.events-item.event-break {
+    background-color: rgba(var(--color-blue), .2);
+}
+
+.events-item > span {
+    padding: 1em 1em;
+}
+
+.events-item > span:first-child {
+    font-size: 1.1em;
+    width: 20%;
+    white-space: nowrap;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.events-item > span:nth-child(2) {
+    font-size: 1.2em;
+    width: 50%;
+    margin: 0 1em;
+}
+
+.events-item.event-break > span:nth-child(2) {
+    font-weight: normal;
+}
+
+.events-item > span:last-child {
+    width: 30%;
+    text-align: right;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.events-item:not(.event-header) > span:last-child {
+    font-style: italic;
+}
+
+/* register popup */
+
+.popup-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.popup-container {
+    display: block;
+    min-width: 30%;
+    max-width: 70%;
+    border: solid 1px rgba(var(--color-blue), .4);
+    border-radius: 4px;
+    background-color: rgb(249, 249, 249);
+    padding: 2em;
+}
+
+.popup-title {
+    margin-top: 0;
+}
+
+.popup-text {}
+
+.popup-footer {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.popup-input {
+    font-family: 'Baloo Chettan 2', sans-serif;
+    font-size: 18px;
+    color: rgb(var(--color-blue));
+    padding: 16px 20px;
+    border: solid 1px rgba(var(--color-blue), .3);
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 1em;
+}
+
+.popup-submit {}
