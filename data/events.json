@@ -1,0 +1,11 @@
+[
+	{ "start": "09:00", "stop": "09:45", "spreker": "Thijmen van Schooten", "onderwerp": "Vegro door de jaren heen." },
+	{ "start": "09:45", "stop": "10:15", "spreker": "Jan de Collega", "onderwerp": "Een 1e kennismaking met docker." },
+	{ "start": "10:15", "stop": "10:30", "spreker": "", "onderwerp": "Koffie met iets lekkers." },
+	{ "start": "10:30", "stop": "11:00", "spreker": "Hans de Man", "onderwerp": "Hoe maak je een strak web design." },
+	{ "start": "11:00", "stop": "12:00", "spreker": "Werner van Brunsum", "onderwerp": "Een introductie in Sana Commerce." },
+	{ "start": "12:00", "stop": "13:00", "spreker": "", "onderwerp": "Heerlijk verzorgde lunch." },
+	{ "start": "13:00", "stop": "13:45", "spreker": "Peter de Goeij", "onderwerp": "JAVA in-depth." },
+	{ "start": "13:45", "stop": "14:30", "spreker": "Tom de Burgt", "onderwerp": "Een overzicht van de nieuwste technieken." },
+	{ "start": "14:30", "stop": "15:30", "spreker": "Willem Vijver", "onderwerp": "Een mooie toekomst!" }
+]
